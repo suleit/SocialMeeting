@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+	<!-- Java Class에 대한 alias 지정 -->
+	<typeAliases>
+		<typeAlias type="com.project.social.vo.ChatRoom" alias="ChatRoom" />
+		<typeAlias type="com.project.social.vo.User" alias="User" />
+		<typeAlias type="com.project.social.vo.Meeting" alias="Meeting" />
+		<typeAlias type="com.project.social.vo.Participate" alias="Participate" />
+	</typeAliases>
+	
+	<!-- Mapper 파일 include -->
+	<mappers>
+		<mapper resource="UserMapper.xml" />
+		<mapper resource="ChattingMapper.xml" />
+	</mappers>
+	
+</configuration>
